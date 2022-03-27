@@ -33,7 +33,7 @@ public class SpawnMarbles : MonoBehaviour
         resetBox();
         // (8,1,6) for quick win
         // (2,1,9) start position
-        GameObject marble = Instantiate(_marblePrefab, new Vector3(8, 1, 6), Quaternion.identity);
+        GameObject marble = Instantiate(_marblePrefab, new Vector3(2, 1, 9), Quaternion.identity);
         marble.GetComponent<Rigidbody>().angularDrag = diff;
         Debug.Log(spawnCounter);
         if(spawnCounter == 4){
